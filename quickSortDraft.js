@@ -1,3 +1,5 @@
+// This is a draft that tested out my codes
+
 let unsorted = [2, 8, 4, 6, 9, 7, 3, 1, 5];
 let index = 0;
 
@@ -58,12 +60,3 @@ function sortNums2(arr) {
 }
 
 let sorted = sortNums1(unsorted);
-// console.log(sorted);
-
-/*
-return arr1.concat(pivotArr, arr2); in the end
-OR
-
-let result =[arr1, pivotArr, arr2]
-return result
-*/
