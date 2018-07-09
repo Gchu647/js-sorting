@@ -2,7 +2,7 @@ let unsorted = [2, 8, 4, 6, 9, 7, 3, 1, 5];
 let index = 0;
 
 function sortNums(arr) {
-  if(arr.length < 1) { // if array index 1 is not empty
+  if(arr.length < 1) { // if array index 0 is not empty
     return arr;
   } else {
     let lastIndex = arr.length - 1;
@@ -26,10 +26,10 @@ function sortNums(arr) {
     }
 
     index++;
-    console.log("Index: ", index);
-    console.log("pivot: ", pivot);
-    console.log("arr1: ", arr1);
-    console.log("arr2: ", arr2);
+    // console.log("Index: ", index);
+    // console.log("pivot: ", pivot);
+    // console.log("arr1: ", arr1);
+    // console.log("arr2: ", arr2);
    
   let result1 = sortNums(arr1);
   let result2 = sortNums(arr2);
