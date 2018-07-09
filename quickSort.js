@@ -1,7 +1,7 @@
 let unsorted = [2, 8, 4, 6, 9, 7, 3, 1, 5];
 let index = 0;
 
-function sortNums(arr) {
+function quickSort(arr) {
   if(arr.length < 1) { // if array index 0 is not empty
     return arr;
   } else {
@@ -31,13 +31,13 @@ function sortNums(arr) {
     // console.log("arr1: ", arr1);
     // console.log("arr2: ", arr2);
    
-  let result1 = sortNums(arr1);
-  let result2 = sortNums(arr2);
+  let result1 = quickSort(arr1);
+  let result2 = quickSort(arr2);
    
   // return result2;
   return result1.concat(pivotArr, result2);
   }
 }
 
-let sorted = sortNums(unsorted);
+let sorted = quickSort(unsorted);
 console.log(sorted);

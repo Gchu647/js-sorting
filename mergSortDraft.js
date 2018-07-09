@@ -71,23 +71,6 @@ function putTogether(arr1, arr2) {
       console.log("it didn't work!");
       break;
     }
-
-    /*
-    if(arr1[0] < arr2[0]) {
-      newArr.push(arr1[0]);
-      arr1.shift();
-    } else if (arr2[0] < arr1[0]){
-      newArr.push(arr2[0]);
-      arr2.shift();
-    } else if(arr1.length === 0) {
-      newArr.push(arr2[0]);
-    } else if(arr2.length === 0) {
-      newArr.push(arr1[0]);
-    } else {
-      console.log("it didn't work!");
-      break;
-    }
-    */
   }
   
   console.log("Returning newArr: ", newArr);
