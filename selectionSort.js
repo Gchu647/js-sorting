@@ -1,25 +1,24 @@
 var unsorted = [8, 5, 1, 9, 7, 4, 6, 2, 3];
 
 function selectionSort(arr) {
-  let newArr = [];
+  let minIdx, temp, 
+    len = arr.length;
 
-  while (arr.length !== 0) {
-    let smaller = arr[0];
-    // 1 loop
-    for (let i = 1; i < arr.length; i++) {
-      if (smaller <= arr[i]) {
-        continue;
-      } else {
-        smaller = arr[i];
+  for (let i = 0; i < len; i++) {
+    minIdx = i;
+
+    for(let j = i + 1; j < len; j++) {
+      if (arr[j] < arr[minIdx]) {
+        minIdx = j;
       }
     }
 
-    newArr.push(smaller);
-    let index = arr.indexOf(smaller);
-    arr.splice(index, 1);
+    temp = arr[i];
+    arr[i] = arr[minIdx];
+    arr[minIdx] = temp;
   }
 
-  return newArr;
+  return arr;
 }
 
 var sorted = selectionSort(unsorted);
